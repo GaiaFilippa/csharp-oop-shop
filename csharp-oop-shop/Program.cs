@@ -19,3 +19,12 @@ Testate poi i vostri oggetti Prodotto, istanziandoli e provando ad interagirci p
  */
 
 
+using csharp_oop_shop;
+
+Prodotto prodotto1 = new Prodotto("Prodotto 1", "Questo è il primo prodotto", 12.50f);
+
+Console.WriteLine("Questo prodotto è il: " + prodotto1.getNome());
+Console.WriteLine("Descrizione del prodotto: " + prodotto1.getDescrizione());
+Console.WriteLine("Questo è il prezzo del prodotto: " + prodotto1.setPrezzo() + " euro");
+Console.WriteLine("Questo è il prezzo con iva: " + prodotto1.prezzoConIva() + " euro");
+Console.WriteLine("Codice: " + prodotto1.getCodice());
