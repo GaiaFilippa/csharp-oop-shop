@@ -28,39 +28,43 @@ namespace csharp_oop_shop
         }
 
         // GETTERS
-        public int getCodice()
+        public int GetCodice()
         {
             Random codiceRandom = new Random();
             int codice = codiceRandom.Next();
             return codice;
         }
 
-        public string getDescrizione()
+        public string GetDescrizione()
         {
             return this.descrizione;
         }
 
-        public string getNome()
+        public string GetNome()
         {
             return this.nome;
         }
 
         // SETTERS
 
-        public float setPrezzo()
+        public float SetPrezzo()
         {
             return (float)this.prezzo;
         }
 
         // METODI
 
-        public float prezzoConIva()
+        public float PrezzoConIva()
         {
             float iva = 1.22f * prezzo;
             return iva;
         }
 
-
+        public string ConcatenaNomeECodice()
+        {
+            string nomeECodice = nome + codice;
+            return nomeECodice;
+        }
 
 
     }
