@@ -25,13 +25,17 @@ namespace csharp_oop_shop
             this.nome = nome;
             this.descrizione = descrizione;
             this.prezzo = prezzo;
+
+            Random codiceRandom = new Random();
+            int codice = codiceRandom.Next();
+            this.codice = codice;
+
         }
 
         // GETTERS
+      
         public int GetCodice()
         {
-            Random codiceRandom = new Random();
-            int codice = codiceRandom.Next();
             return codice;
         }
 
@@ -62,7 +66,7 @@ namespace csharp_oop_shop
 
         public string ConcatenaNomeECodice()
         {
-            string nomeECodice = nome + codice;
+            string nomeECodice = nome + this.codice;
             return nomeECodice;
         }
 

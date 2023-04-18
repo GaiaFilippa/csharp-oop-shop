@@ -23,9 +23,10 @@ using csharp_oop_shop;
 
 Prodotto prodotto1 = new Prodotto("ProdottoUno", "Questo è il primo prodotto", 12.50f);
 
+
 Console.WriteLine("Questo prodotto è il: " + prodotto1.GetNome());
 Console.WriteLine("Descrizione del prodotto: " + prodotto1.GetDescrizione());
 Console.WriteLine("Questo è il prezzo del prodotto: " + prodotto1.SetPrezzo() + " euro");
 Console.WriteLine("Questo è il prezzo con iva: " + prodotto1.PrezzoConIva() + " euro");
-Console.WriteLine("Codice: " + prodotto1.GetCodice());
+Console.WriteLine("Questo è il codice: " + prodotto1.GetCodice());
 Console.WriteLine("Nome esteso: " + prodotto1.ConcatenaNomeECodice());
