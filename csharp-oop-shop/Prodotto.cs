@@ -32,7 +32,7 @@ namespace csharp_oop_shop
         {
             Random codiceRandom = new Random();
             int codice = codiceRandom.Next();
-            return this.codice;
+            return codice;
         }
 
         public string getDescrizione()
